@@ -28,9 +28,9 @@ class List{
             size = 0;
         }
         List(int v){
-            Node n(v);
-            front = &n;
-            it = &n;
+            Node* temp = new Node(v);
+            front = temp;
+            it = temp;
             size = 1;
         }
         int get_iterator(){
